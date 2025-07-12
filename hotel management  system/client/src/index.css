@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer components {
+    .primary-col {
+        background-color: #003049;
+    }
+    .primary-col-hover {
+        background-color: #002335;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Hide arrows */
+::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Style track */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #002335;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #136D9B;
+  border-radius: 10px;
+  border: 1px solid #002335;
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #136D9B #002335;
+}
