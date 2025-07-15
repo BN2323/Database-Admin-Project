@@ -9,12 +9,12 @@ const SideBar = () => {
         </div>
         <div className='flex flex-col'>
             <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`} to="/" style={{ marginRight: '10px' }}>🏠  Home</NavLink>
-            <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`} to="/role" style={{ marginRight: '10px' }}>👤  Manage Users</NavLink>
-            <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`}  to="/user" style={{ marginRight: '10px' }}>🛡️  Manage Roles</NavLink>
+            <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`} to="/user" style={{ marginRight: '10px' }}>👤  Manage Users</NavLink>
+            <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`}  to="/role" style={{ marginRight: '10px' }}>🛡️  Manage Roles</NavLink>
             <NavLink className={({isActive}) => `py-3 px-5 w-full cursor-pointer hover:bg-[#002335] ${isActive ? 'bg-[#002335]' : '' }`}  to="/backup" style={{ marginRight: '10px' }}>💾  Backup & Recovery</NavLink>
         </div>
     </nav>
   )
 }
-
+ 
 export default SideBar
